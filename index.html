@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="shortcut icon" href="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B" class="rounded-full" />
+      <link
+         rel="Pingo icon"
+         sizes="76x76"
+         href="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+         />
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <title>Pingo </title>
+      <style>
+         .pink{
+         background-color: #FF0062;
+         }
+      </style>
+   </head>
+   <body class="text-gray-800 antialiased">
+      <nav id="header" class="fixed bg-gray-800 text-white w-full z-50 top-0 bg-opacity-90 ">
+         <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+            <div class="block lg:hidden pl-8 p-2">
+               <a class="text-black-300 font-bold text-base no-underline hover:no-underline" href="#">
+               Pingo
+               </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+               <button id="nav-toggle" class="flex items-center px-3 py-2 text-black-300 border-gray-600 focus:outline-none">
+                  <svg fill="text-black-300" viewBox="0 0 20 20" class="w-6 h-6 fill-current">
+                     <title>Menu</title>
+                     <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+            </div>
+            <div class="w-full flex-grow p-4 lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 md:bg-transparent z-20 bg-opacity-50"
+               id="nav-content">
+               <ul class="list-reset lg:flex justify-center flex-1 items-center">
+                  <li class="mr-3">
+                     <a class=" inline-block py-2 px-4 text-black-300 font-bold"
+                        href="#">
+                     <img
+                        alt="Pingo"
+                        class="object-scale-down w-10 rounded-lg shadow-lg"
+                        src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B"
+                        />
+                     </a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4" href="#">Story</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4" href="#new">New</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4" href="#about">About</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4" href="#contact">Join us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <main>
+         <div
+            class="relative pt-16 pb-32 flex content-center items-center justify-center"
+            style="min-height: 88vh;"
+            >
+            <div
+               class="absolute top-0 w-full h-full bg-top bg-cover"
+               style='background-image: url("https://images.unsplash.com/photo-1540651810471-5699df74834f");'
+               >
+               <span
+                  id="blackOverlay"
+                  class="w-full h-full absolute opacity-50 bg-black "
+                  ></span>
+            </div>
+            <div class="container relative mx-auto ">
+               <div class="items-center flex flex-wrap">
+                  <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                     <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                           Pingo: the best of the best!
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300">
+                           If you want to join us click on the link below          
+                        </p>
+                        </p>
+                        <a href="https://www.instagram.com/pingoiraq/"
+                           class="pink hover:pink text-white font-semibold hover:text-white p-4 border
+                           hover:border-transparent rounded inline-block mt-5 cursor-pointer"> click me </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div
+               class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+               style="height: 70px;"
+               >
+               <svg
+                  class="absolute bottom-0 overflow-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                  >
+                  <polygon
+                     class="text-gray-300 fill-current"
+                     points="2560 0 2560 100 0 100"
+                     ></polygon>
+               </svg>
+            </div>
+         </div>
+         <section class="relative py-20" id="story">
+            <div
+               class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+               style="height: 80px;"
+               >
+               <svg
+                  class="absolute bottom-0 overflow-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                  >
+                  <polygon
+                     class=" pink text-white fill-current"
+                     points="2560 0 2560 100 0 100"
+                     ></polygon>
+               </svg>
+            </div>
+            <div class="container mx-auto px-4">
+               <div class="items-center flex flex-wrap">
+                  <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                     <img
+                        alt="Pingo"
+                        class="max-w-full rounded-lg shadow-lg"
+                        src="https://scontent.fbgw41-4.fna.fbcdn.net/v/t1.6435-9/45154464_300018057268995_7331787045771149312_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=e3f864&_nc_ohc=ilV9y-HhGFcAX-5TwKV&_nc_ht=scontent.fbgw41-4.fna&oh=2d98d79068451ee6158786159a747a10&oe=60DA6E50"
+                        />
+                  </div>
+                  <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                     <div class="md:pr-12">
+                        <div
+                           class=" p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full "
+                           >
+                           <img src="https://scontent.fbgw41-4.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9HbjPM&_nc_ht=scontent.fbgw41-4.fna&oh=24babd6e9f109375d10eba1ea59eb23d&oe=60D8336B" alt=""
+                              class=" rounded-full "
+                              >
+                        </div>
+                        <h3 class="text-4xl font-semibold uppercase" id="about">About Pingo </h3>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                           Iraqi Brand specialized in manufacturing
+                           and selling pins various shapes and sizes.
+                        </p>
+                        <ul class="list-none mt-6">
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs pink  font-semibold inline-block py-1 px-3 uppercase rounded-full   mr-3 text-pink-100 pink  mr-3 "
+                                       ><i class="fas fa-briefcase"></i>
+                                    </span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">
+                                       Carefully crafted components
+                                    </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-pink-100 pink mr-3"
+                                       ><i class="fas fa-star"></i> </span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">Amazing Pins </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-pink-100 pink mr-3"
+                                       ><i class="fas fa-clipboard"></i
+                                       ></span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">stickers </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-pink-100 pink mr-3"
+                                       ><i class="fas fa-pencil-alt"></i
+                                       ></span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">Note Books </h4>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="pt-20 pb-48" id="new">
+            <div class="container mx-auto px-4">
+               <div class="flex flex-wrap justify-center text-center mb-24">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <h2 class="text-4xl font-semibold uppercase ">Whats New IN Pingo Store !</h2>
+                  </div>
+               </div>
+               <div class="flex flex-wrap">
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+                           src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/141618900_769605710310225_9050985111504488208_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=a26aad&_nc_ohc=pTrwQ4zDzacAX8nXWbB&_nc_ht=scontent.fbgw11-1.fna&oh=ab315ac7b622a8fcb641205960a11f62&oe=60D9E651"
+                           class="shadow-lg rounded max-w-full mx-auto"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Starry night in Baghdad</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+                           src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-0/p526x296/134573918_756450951625701_5661369014390097568_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=a26aad&_nc_ohc=YbYfHxLJPKgAX978Npa&_nc_ht=scontent.fbgw11-1.fna&tp=6&oh=32aa57439a28a75948caadf614a72fcc&oe=60D81229"
+                           class="shadow-lg rounded max-w-full mx-auto"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Pins For painters </h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+                           src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-0/p526x296/134678863_756449714959158_3561462161393215504_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=a26aad&_nc_ohc=hVYZt8tNMCUAX9jU-UE&_nc_ht=scontent.fbgw11-1.fna&tp=6&oh=9f292966570147750a1c390b93d8ae2f&oe=60D8B3D3"
+                           class="shadow-lg rounded max-w-full mx-auto"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">We believe in ART</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+                           src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/135744264_756446954959434_5041926483748694153_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=a26aad&_nc_ohc=deT85I2fyXIAX_65r9S&tn=1HlgpBqLt7apVsUt&_nc_ht=scontent.fbgw11-1.fna&oh=a4db52b03b09f8fa9e405f27997d6035&oe=60D65BBE"
+                           class="shadow-lg rounded max-w-full mx-auto"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Painting pins</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="pb-20 relative block bg-white text-black" id="contact">
+            <div
+               class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+               style="height: 80px;"
+               >
+            </div>
+            <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+               <div class="flex flex-wrap text-center justify-center">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <h2 class="text-4xl font-semibold text-black uppercase ">contact us</h2>
+                     <p class="text-lg leading-relaxed mt-4 mb-4 text-black text-bold uppercase">
+                        contact us to ask about anything and if you have buy pins we will be happy
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="relative block py-24 lg:pt-0 bg-white">
+            <div class="container mx-auto px-4">
+               <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <div
+                        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                        >
+                        <div class="flex-auto p-5 lg:p-10 pink text-white">
+                           <h4 class="text-2xl font-semibold uppercase">Want to work with us?</h4>
+                           <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                              Complete this form and we will get back to you in 24 hours.
+                           </p>
+                           <div class="relative w-full mb-3 mt-8">
+                              <label
+                                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                 for="full-name" >Full Name</label>
+                              <input
+                                 type="text"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Full Name"
+                                 style="transition: all 0.15s ease 0s;"
+                                 />
+                           </div>
+                           <div class="relative w-full mb-3">
+                              <label
+                                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                 for="email"
+                                 >Email</label
+                                 ><input
+                                 type="email"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Email"
+                                 style="transition: all 0.15s ease 0s;"
+                                 />
+                           </div>
+                           <div class="relative w-full mb-3">
+                              <label
+                                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                 for="message"
+                                 >Message</label
+                                 ><textarea
+                                 rows="4"
+                                 cols="80"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Type a message..."
+                                 ></textarea>
+                           </div>
+                           <div class="text-center mt-6">
+                              <button
+                                 class="bg-white text-gray-600 active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                 type="button"
+                                 style="transition: all 0.15s ease 0s;"
+                                 >
+                              Send Message
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="relative bg-gray-800 pt-8">
+
+         <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+               <div class="w-full text-white">
+                  <div class="xl:px-40 pb-12 lg:px-20 md:px-10 sm:px-5 px-10">
+                     <div class="w-full pt-12 flex flex-col sm:flex-row space-y-2  justify-start">
+                        <div class="w-full sm:w-3/5 pr-6 flex flex-col space-y-4">
+                           <img
+                              alt="Pingo"
+                              class="object-scale-down w-10 rounded-lg shadow-lg"
+                              src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B"
+                              />                
+                           <p>Al-Fusia Restaurant and Cafe Building, Arsat Al-Hindiya, Baghdad
+                           </p>
+                        </div>
+                        <div class="w-full sm:w-1/5 flex flex-col space-y-4">
+                           <a>About Us</a>
+                           <a>Responsibilities</a>
+                           <a>Out Services</a>
+                           <a>Contact</a>
+                        </div>
+                        <div class="w-full sm:w-1/5 mb-1  space-y-4">
+                           <h5 class="text-lg mt-0 mb-2 text-white">
+                              Find us on any of these platforms
+                           </h5>
+                           <h4>Follow us on social media</h4>
+                           <div class="flex flex-row space-x-4">
+                              <a href="https://www.facebook.com/Pingoiraq/?ref=page_internal"
+                                 class=""> <i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.facebook.com/Pingoiraq/?ref=page_internal"
+                                 class=""> <i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="opacity-60 pt-2">
+                        <p>© 2020 Executive Trade International.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </footer>
+   </body>
+   <script>     
+      document.getElementById('nav-toggle').onclick = function () {
+         document.getElementById("nav-content").classList.toggle("hidden");
+      }
+   </script>
+</html>
